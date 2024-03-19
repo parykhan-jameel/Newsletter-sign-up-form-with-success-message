@@ -7,6 +7,7 @@ form.addEventListener('submit', (e) => {
     document.getElementById('email-error').textContent = '';
     const emailInput = document.getElementById("email").value.trim();
      
+    
     if (emailInput === ''){
         document.getElementById('email-error').textContent = 'Please enter your email address';
         return;
