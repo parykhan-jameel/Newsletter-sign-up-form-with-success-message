@@ -1,0 +1,169 @@
+@font-face {
+    font-family: MyFont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+    
+}
+@font-face {
+    font-family: secondFont;
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: MyFont;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container{
+    display: flex;
+    width: 800px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.right{
+    width:60% ;
+}
+.left{
+    width:40%
+}
+.left img {
+    width:100%;
+    
+}
+ul{
+    list-style-image:url(./assets/images/icon-list.svg) ;
+    
+}
+li {
+    margin-bottom: 10px;
+    margin-left: 0%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:hsl(234, 29%, 20%);
+    font-size: smaller;
+}
+input {
+    padding:10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+    
+
+}
+button {
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 12px 22px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: hsl(235, 18%, 26%);
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 5px 5px 15px hsl(4, 100%, 67%);
+    transition: all 1s;
+   
+}
+h1 {
+   font-size: 50px;
+   color:hsl(235, 18%, 26%);
+   font-family: secondFont;
+}
+.hide {
+    display: none;
+}
+.container-2 {
+    
+    width: 400px;
+    
+    padding:40px;
+    background-color: hsl(0, 0%, 100%);
+    
+    border-radius:25px ;
+
+}
+.container-2 h1 {
+    font-size: 40px;
+}
+.icon-container-2 {
+    width: 50px;
+}
+.container-2 button {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: initial;
+        padding: 0;
+    }
+    body {
+       display: initial;
+       line-height: 1.4;
+       padding: 0;
+       margin: 0;
+        
+    }
+    .container h1 {
+        font-size: 30px;
+    }
+    .right ul li {
+        margin-bottom: 1rem;
+    }
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+    .left {
+        width: 100%;
+    }
+    .left img {
+        content: url("./assets/images/illustration-sign-up-mobile.svg")
+    }
+    form {
+       width: 100%; 
+    }
+    .container-2 {
+        width: 100%;
+        min-height: 100vh;
+        
+        
+    }
+    .container-2 button {
+        align-items: center;
+    }
+
+}
+#email-error {
+    color: red;
+    margin-top: 6px;
+    
+    font-size: smaller;
+
+
+}
+#confirmation-email {
+    font-weight: bold;
+}
+
+
